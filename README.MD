@@ -1,62 +1,79 @@
-# Análisis de Eventos Adversos de Vacunas COVID-19
+# 💉 COVID-19 Vaccine Adverse Event Analysis
 
-Este proyecto analiza los eventos adversos reportados tras la administración de vacunas COVID-19, utilizando datos del sistema VAERS (Vaccine Adverse Event Reporting System). 
-El objetivo es identificar patrones y tendencias que puedan mejorar la toma de decisiones en salud pública y optimizar la gestión de efectos adversos de las vacunas.
+This project analyzes adverse events reported after the administration of COVID-19 vaccines, using data from the VAERS (Vaccine Adverse Event Reporting System). The goal is to identify patterns and trends that can support public health decision-making and optimize the management of vaccine-related side effects.
 
-## Objetivo del Proyecto
-El objetivo principal es analizar los reportes de eventos adversos asociados con las vacunas COVID-19 para generar insights accionables 
-que respalden decisiones en políticas de vacunación y atención de salud pública.
+## 🎯 Project Objective
 
-## Metodología
-1. **Fuente de Datos:** 
-   - Datos extraídos de VAERS, una base de datos pública que recopila reportes de eventos adversos relacionados con la vacunación en EE.UU.
+The primary goal is to analyze reports of adverse events associated with COVID-19 vaccines to generate actionable insights that support vaccination policy decisions and public health management.
 
-2. **Limpieza de Datos:**
-   - Se eliminaron valores duplicados y nulos irrelevantes.
-   - Se normalizaron y estandarizaron columnas clave, incluyendo síntomas y demografía de los pacientes.
+## 🛠️ Methodology
 
-3. **Almacenamiento en SQL:**
-   - Los datos fueron organizados y gestionados en una base de datos SQL para permitir consultas eficientes y estructuradas.
+### 📊 Data Source:
 
-4. **Consultas y Análisis:**
-   - Se realizaron consultas SQL para extraer subconjuntos clave de datos y se utilizó Tableau para el análisis visual de los datos y la creación de dashboards.
+- Data was extracted from Kaggle's Vaccines Database obtained from VAERS, a public database that collects reports of adverse events related to vaccination in the United States.
 
-## Hipótesis Analizadas
-1. **Prevalencia de Síntomas por Género:** Las mujeres tienen una mayor probabilidad de presentar síntomas adversos tras la vacunación en comparación con los hombres.
-2. **Mortalidad y Edad:** Los pacientes de mayor edad presentan un mayor riesgo de mortalidad tras la vacunación.
-3. **Incidencia en Estados más Poblados:** Los estados con mayor población tienden a reportar un mayor número de eventos adversos.
+### 🧹 Data Cleaning:
 
-## Insights Principales
-1. **Prevalencia de Síntomas por Género:**
-   - Las mujeres reportan un mayor número de síntomas adversos, especialmente en categorías leves.
+- Duplicates and irrelevant null values were removed.
+- Key columns, including symptoms and patient demographics, were normalized and standardized.
 
-2. **Mortalidad y Edad:**
-   - Se observó que las personas mayores presentan un mayor riesgo de síntomas severos y mortalidad, alineándose con la hipótesis inicial.
+### 💾 SQL Storage:
 
-3. **Incidencia por Estado y Población:**
-   - Los estados con mayor población presentan una mayor cantidad de reportes de eventos adversos, lo que podría estar relacionado con la mayor exposición y distribución de vacunas.
+- Data was organized and managed in a SQL database to enable efficient and structured queries.
 
-## Recomendaciones
-1. **Estandarización en la Recogida de Información y Codificación de Síntomas:**
-   - Implementar un método uniforme de codificación de síntomas para asegurar una mayor consistencia en los reportes y mejorar la comparabilidad de datos.
+### 🔍 Queries and Analysis:
 
-2. **Reducción de Campos Textuales No Estructurados:**
-   - Minimizar el uso de texto libre en los reportes para reducir errores y facilitar el análisis automatizado de los datos.
+- SQL queries were performed to extract key data subsets, and Tableau was used for visual analysis and dashboard creation.
 
-3. **Homogeneización de Datos Demográficos:**
-   - Recoger información adicional sobre comorbilidades y antecedentes médicos para permitir un análisis más preciso de los factores de riesgo por grupo poblacional.
+## 📉 Analyzed Hypotheses
 
-4. **Monitoreo de Lotes Específicos:**
-   - Realizar un seguimiento adicional a lotes de vacunas con mayores reportes de eventos adversos para asegurar la consistencia en su seguridad y calidad.
+1. **Prevalence of Symptoms by Gender**: Women are more likely to present adverse symptoms after vaccination compared to men.
+2. **Mortality and Age**: Older patients are at greater risk of mortality following vaccination.
+3. **Incidence in More Populated States**: States with higher populations tend to report more adverse events.
 
-## Visualizaciones
-El análisis incluyó visualizaciones clave desarrolladas en Tableau:
-- **Prevalencia de Síntomas por Género**
-- **Mortalidad y Edad**
-- **Distribución de Síntomas por Estado**
-- **Análisis de Lotes de Vacunas**
+## 🔑 Key Insights
 
-Estas visualizaciones ayudan a comprender la relación entre síntomas, género, edad, estado geográfico y lotes de vacunas, proporcionando una visión amplia sobre la distribución y severidad de los efectos adversos.
+### 1. 👩‍⚕️ Prevalence of Symptoms by Gender:
 
-## Conclusión
-Este análisis de eventos adversos asociados con la vacunación contra COVID-19 identifica tendencias clave en síntomas, mortalidad y distribución geográfica. Las recomendaciones resultantes buscan mejorar la calidad de los reportes de eventos adversos y ayudar a reducir riesgos asociados con la vacunación en poblaciones específicas.
+- Women report a higher number of adverse symptoms, particularly in mild categories.
+
+### 2. 🧓 Mortality and Age:
+
+- Older individuals show a greater risk of severe symptoms and mortality, consistent with the initial hypothesis.
+
+### 3. 🏙️ Incidence by State Population:
+
+- More populous states report a higher number of adverse events, likely related to greater exposure and vaccine distribution.
+
+## 💡 Recommendations
+
+### 1. 📝 Standardization of Symptom Reporting and Coding:
+
+- Implement a uniform method of symptom coding to ensure greater consistency in reports and improve data comparability.
+
+### 2. 🔄 Reduction of Unstructured Text Fields:
+
+- Minimize the use of free-text in reports to reduce errors and facilitate automated data analysis.
+
+### 3. 🧑‍🤝‍🧑 Homogenization of Demographic Data:
+
+- Collect additional information on comorbidities and medical history to allow more precise analysis of risk factors by population group.
+
+### 4. 🧪 Monitoring of Specific Vaccine Lots:
+
+- Conduct additional monitoring of vaccine lots with higher reports of adverse events to ensure consistency in their safety and quality.
+
+## 📊 Visualizations
+
+The analysis included key visualizations developed in Tableau:
+
+1. **Prevalence of Symptoms by Gender**
+2. **Mortality and Age**
+3. **Symptom Distribution by State**
+4. **Analysis of Vaccine Lots**
+
+These visualizations help to understand the relationship between symptoms, gender, age, geographic state, and vaccine lots, providing a comprehensive view of the distribution and severity of adverse effects.
+
+## 🏁 Conclusion
+
+This analysis of adverse events associated with COVID-19 vaccination identifies key trends in symptoms, mortality, and geographic distribution. The resulting recommendations aim to improve the quality of adverse event reports and help reduce risks associated with vaccination in specific populations.
