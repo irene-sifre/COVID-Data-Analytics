@@ -21,6 +21,7 @@ The primary goal is to analyze reports of adverse events associated with COVID-1
 
 - Data was organized and managed in a SQL database to enable efficient and structured queries.
 
+
 ### 🔍 Queries and Analysis:
 
 - SQL queries were performed to extract key data subsets, and Tableau was used for visual analysis and dashboard creation.
@@ -55,13 +56,6 @@ The primary goal is to analyze reports of adverse events associated with COVID-1
 
 - Minimize the use of free-text in reports to reduce errors and facilitate automated data analysis.
 
-### 3. 🧑‍🤝‍🧑 Homogenization of Demographic Data:
-
-- Collect additional information on comorbidities and medical history to allow more precise analysis of risk factors by population group.
-
-### 4. 🧪 Monitoring of Specific Vaccine Lots:
-
-- Conduct additional monitoring of vaccine lots with higher reports of adverse events to ensure consistency in their safety and quality.
 
 ## 📊 Visualizations
 
